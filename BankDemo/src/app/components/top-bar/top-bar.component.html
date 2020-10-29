@@ -1,4 +1,12 @@
 <mat-toolbar>
-    <button mat-icon-button class="homeButton" aria-label="button that route you to home page">
+    <button mat-icon-button class="homeButton" aria-label="Home" (click)="homeClick()">
+        <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button class="accountButton" *ngIf="this.myAccount" aria-label="MyAccount"  (click)="myAccountClick()" >
+        <mat-icon>account_circle</mat-icon>
+    </button>
+    <span class="toolbar-divider"></span>
+    <button mat-icon-button class="loginButton" aria-label="Login" (click)="loginClick()" >
+        <mat-icon>supervisor_account</mat-icon>
     </button>
 </mat-toolbar>
