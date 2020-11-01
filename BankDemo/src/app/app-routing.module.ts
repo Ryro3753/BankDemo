@@ -6,6 +6,7 @@ import { BankDemoMyAccountComponent } from './pages/bank-demo-my-account/bank-de
 
 const routes: Routes = [
   {path:'Home', component:BankDemoHomeComponent},
+  {path:'', redirectTo:'/Home', pathMatch:'full'},
   {path:'Login', component:BankDemoLoginComponent},
   {path:'MyAccount', component:BankDemoMyAccountComponent}
 
